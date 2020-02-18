@@ -28,6 +28,9 @@ public class BPC1 implements Subject {
 		if (points+activP<=20) {
 			activP=activP+points;
 		}
+		else {
+			System.out.println("Max points reached(20); You have = "+ activP);
+		}
 	}
 	public void finalexamP(int points) {
 		if (points<=80) {

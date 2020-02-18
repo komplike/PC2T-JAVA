@@ -12,15 +12,19 @@ public class test {
 		Scanner sc;
 		
 		//BPC1
-		while(!subBPC1.isEnough()) {
-			System.out.println("BPC1 : Zadaj body za aktivitu: ");
+		while(subBPC1.getPoints()!=20) {
+			System.out.println("BPC1 : Zadaj body za aktivitu ('q' for quit): ");
 			sc = new Scanner(System.in);
+			if (sc.hasNext("q")) {
+			break;
+			}
 			subBPC1.activityP(sc.nextInt());
 		}
-		System.out.println("BPC1 : Zadaj body zo skusky: ");
-		sc = new Scanner(System.in);
-		subBPC1.finalexamP(sc.nextInt());
-		
+		if (subBPC1.isEnough()) {
+			System.out.println("BPC1 : Zadaj body zo skusky: ");
+			sc = new Scanner(System.in);
+			subBPC1.finalexamP(sc.nextInt());
+		}
 		//BPC2
 		System.out.println("BPC2 : Zadaj body za projekt: ");
 		sc = new Scanner(System.in);
