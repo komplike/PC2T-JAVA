@@ -1,0 +1,5 @@
+Animal: Cat , Age: 2, Sound : Meow.
+Animal: Dog , Age: 7, Sound : Haf.
+Animal: Pig , Age: 12, Sound : snort.
+Animal: Cow , Age: 14, Sound : Moooo.
+Animal: Goat , Age: 13, Sound : Baaa.
